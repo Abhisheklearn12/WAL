@@ -122,7 +122,7 @@ fn main() -> io::Result<()> {
     // Run 2: 2 recovered → writes 2 → total 4 in WAL
     // Run 3: 4 recovered → writes 2 → total 6 in WAL
     // And so on...
-    wal.truncate()?;
+    // wal.truncate()?;
 
     Ok(())
 }
