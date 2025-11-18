@@ -139,3 +139,4 @@ fn main() -> io::Result<()> {
 // b. sync_all() ensures data reaches physical disk (survives power loss)
 // c. On restart, all entries are read back and replayed to restore state
 // d. After applying entries to main storage, the log is truncated
+// e. This is how databases guarantee the "D" in ACID (Atomicity, Consistency, Isolation, Durability), important concept.
